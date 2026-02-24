@@ -1,0 +1,166 @@
+@media screen and (min-width: 768px){
+html, body{
+    height: 100%;
+}
+body{
+    margin: 0;
+    background: url("yourvintage-abstract-black-white-wave-background-free-video.jpg-background-image.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+.main
+{
+    height: 400px;
+    width: 600px;
+    position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+    transform: translate(-50%, -50%);
+    
+}
+#back
+{
+    position:absolute;
+    visibility: none;
+    display: block;
+    top: 0;
+  left: 0;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    height: 100%;
+    opacity: 5%;
+    object-fit: cover;
+  z-index: -1; 
+}
+#mid
+{
+    background-color: #141414;
+    position: absolute;
+    margin-left: 60px;
+    height: 400px;
+    width: 550px;
+    border-radius: 10px;
+    box-shadow: 1px 0px 40px -4px rgba(69,0,130,0.87) inset;
+-webkit-box-shadow: 1px 0px 40px -4px rgba(69,0,130,0.87) inset;
+-moz-box-shadow: 1px 0px 40px -4px rgba(69,0,130,0.87) inset;
+user-select: none;  
+
+    }
+#sidebar
+{
+    z-index: 2;
+    background-color: #141414;
+    height: 400px;
+    width: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 0px 18px -3px rgba(69,0,130,0.87) inset;
+-webkit-box-shadow: 1px 0px 18px -3px rgba(69,0,130,0.87) inset;
+-moz-box-shadow: 1px 0px 18px -3px rgba(69,0,130,0.87) inset;
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.ime {
+    font-size: 40px;
+    position: absolute;
+    font-family: sans-serif;
+    color: transparent; /* Make text transparent */
+    margin-top: 155px;
+    margin-left: 255px;
+    font-weight: bold;
+
+    background: linear-gradient(to right, #fff 0%, #262626 50%, #fff 100%);
+    background-size: 1000px; /* Ensure background-size is set correctly */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; /* For WebKit browsers */
+    animation: animate 5s infinite linear; /* Add linear timing function */
+}
+
+@keyframes animate {
+        0%{
+        background-position: -500px;
+        }
+        100%{
+        background-position: 500px;
+}
+}
+#ime2
+{
+    font-size: 15px;
+    position: fixed;
+    font-family: sans-serif;
+    color: aliceblue;
+    margin-top: 180px;
+    margin-left: 300px;
+    text-shadow: 3px 0px 2px rgba(0,0,0,0.6);
+}
+#image
+{
+    position: fixed;
+    margin-top: 130px;
+    margin-left: 70px;
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height: 125px;
+}
+#ig
+{
+    top: 30px;
+    height: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: invert(1);
+    transition: transform 0.5s ease;
+}
+#ig:hover
+{
+    border-radius: 35px;
+    animation: shake 3s infinite;
+}
+@keyframes shake {
+    0%, 20% {
+        transform: scale(1)rotate(0deg);
+      }
+      20%, 40% {
+        transform: scale(1.2) rotate(90deg);
+      }
+      40%, 60% {
+        transform: scale(1.2) rotate(180deg);
+      }
+      60%, 80% {
+        transform: scale(1.2)rotate(270deg);
+      }
+      80%, 100% {
+        transform: scale(1) rotate(360deg);
+      }
+  }
+#job
+{
+    font-size: 15px;
+    position: fixed;
+    font-family: sans-serif;
+    color: aliceblue;
+    margin-top: 205px;
+    margin-left: 250px;
+    text-shadow: 3px 0px 2px rgba(0,0,0,0.6);
+}
+#next
+{
+    height: 30px;
+    filter: invert(1);
+    margin-top: 320px;
+    margin-left: 480px;
+    transition: transform 0.3s ease;
+}
+#next:hover
+{
+    cursor: pointer;
+    size: 100%;
+    transform: scale(1.2);
+}
+}
