@@ -4,7 +4,7 @@ html, body{
 }
 body{
     margin: 0;
-    background: url("yourvintage-abstract-black-white-wave-background-free-video.jpg-background-image.jpg") no-repeat center center fixed;
+    background: no-repeat center center fixed;
   background-size: cover;
 }
 .main
@@ -21,12 +21,10 @@ body{
 #back
 {
     position:absolute;
-    visibility: none;
     display: block;
     top: 0;
   left: 0;
     max-width: 100%;
-    height: auto;
     width: 100%;
     height: 100%;
     opacity: 5%;
@@ -41,9 +39,9 @@ body{
     height: 400px;
     width: 550px;
     border-radius: 10px;
-    box-shadow: 1px 0px 40px -4px rgba(69,0,130,0.87) inset;
--webkit-box-shadow: 1px 0px 40px -4px rgba(69,0,130,0.87) inset;
--moz-box-shadow: 1px 0px 40px -4px rgba(69,0,130,0.87) inset;
+    box-shadow: 1px 0 40px -4px rgba(69,0,130,0.87) inset;
+-webkit-box-shadow: 1px 0 40px -4px rgba(69,0,130,0.87) inset;
+-moz-box-shadow: 1px 0 40px -4px rgba(69,0,130,0.87) inset;
 user-select: none;  
 
     }
@@ -54,9 +52,9 @@ user-select: none;
     height: 400px;
     width: 50px;
     border-radius: 10px;
-    box-shadow: 1px 0px 18px -3px rgba(69,0,130,0.87) inset;
--webkit-box-shadow: 1px 0px 18px -3px rgba(69,0,130,0.87) inset;
--moz-box-shadow: 1px 0px 18px -3px rgba(69,0,130,0.87) inset;
+    box-shadow: 1px 0 18px -3px rgba(69,0,130,0.87) inset;
+-webkit-box-shadow: 1px 0 18px -3px rgba(69,0,130,0.87) inset;
+-moz-box-shadow: 1px 0 18px -3px rgba(69,0,130,0.87) inset;
 display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,17 +65,17 @@ display: flex;
     font-size: 40px;
     position: absolute;
     font-family: sans-serif;
-    color: transparent; /* Make text transparent */
+    color: transparent;
     margin-top: 155px;
     margin-left: 255px;
     font-weight: bold;
 
     background: linear-gradient(to right, #fff 0%, #262626 50%, #fff 100%);
-    background-size: 1000px; /* Ensure background-size is set correctly */
+    background-size: 1000px;
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent; /* For WebKit browsers */
-    animation: animate 5s infinite linear; /* Add linear timing function */
+    -webkit-text-fill-color: transparent;
+    animation: animate 5s infinite linear;
 }
 
 @keyframes animate {
@@ -96,7 +94,7 @@ display: flex;
     color: aliceblue;
     margin-top: 180px;
     margin-left: 300px;
-    text-shadow: 3px 0px 2px rgba(0,0,0,0.6);
+    text-shadow: 3px 0 2px rgba(0,0,0,0.6);
 }
 #image
 {
@@ -104,10 +102,10 @@ display: flex;
     margin-top: 130px;
     margin-left: 70px;
     border-radius: 100px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     height: 125px;
 }
-#ig
+.ig
 {
     top: 30px;
     height: 30px;
@@ -117,7 +115,7 @@ display: flex;
     filter: invert(1);
     transition: transform 0.5s ease;
 }
-#ig:hover
+.ig:hover
 {
     border-radius: 35px;
     animation: shake 3s infinite;
@@ -147,7 +145,7 @@ display: flex;
     color: aliceblue;
     margin-top: 205px;
     margin-left: 250px;
-    text-shadow: 3px 0px 2px rgba(0,0,0,0.6);
+    text-shadow: 3px 0 2px rgba(0,0,0,0.6);
 }
 #next
 {
@@ -160,7 +158,6 @@ display: flex;
 #next:hover
 {
     cursor: pointer;
-    size: 100%;
     transform: scale(1.2);
 }
 }
